@@ -48,11 +48,12 @@ class GoogleSuggestions extends Component {
               <input
                 type="search"
                 className="search-input"
-                placeholder="Search Google"
+                placeholder="Search in Google"
                 onChange={this.onChangeSearchInput}
                 value={searchInput}
               />
             </div>
+
             <ul className="suggestions-list">
               {searchResults.map(eachSuggestion => (
                 <SuggestionItem
